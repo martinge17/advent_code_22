@@ -1,11 +1,9 @@
 
 def check_pair_cointains(firstPair, secondPair):
 
-    print(firstPair[0], firstPair[1])
-
-    if (firstPair[0] <= secondPair[0]) and (firstPair[1] >= secondPair[1]):
+    if (int(firstPair[0]) <= int(secondPair[0])) and (int(firstPair[1]) >= int(secondPair[1])):  # Ex: 2-8 3-7
         return True
-    if (secondPair[0] <= firstPair[0]) and (secondPair[1] >= firstPair[1]):
+    if (int(firstPair[0]) >= int(secondPair[0])) and (int(firstPair[1]) <= int(secondPair[1])):  # Ex: 6-6 4-6
         return True
 
 
@@ -29,5 +27,3 @@ for line in lines:
 
 
 print("Number of pairs -> " + str(number_pairs))
-
-# TODO: NOn funciona conta de mais.
